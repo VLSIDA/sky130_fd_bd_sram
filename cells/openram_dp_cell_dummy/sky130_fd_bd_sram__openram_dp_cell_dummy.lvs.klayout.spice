@@ -20,17 +20,17 @@
 *.SEEDPROM
 
 * Bitcell Core
-M1 1 GND GND GND npd W=0.21 L=0.15 m=1 mult=1
-M2 1 WL1 BL1 GND npd W=0.21 L=0.15 m=1 mult=1
-M3 2 GND GND GND npd W=0.21 L=0.15 m=1 mult=1
-M4 2 WL1 BR1 GND npd W=0.21 L=0.15 m=1 mult=1
-M5 3 GND GND GND npd W=0.21 L=0.15 m=1 mult=1
-M6 3 WL0 BL0 GND npd W=0.21 L=0.15 m=1 mult=1
-M7 4 GND GND GND npd W=0.21 L=0.15 m=1 mult=1
-M8 4 WL0 BR0 GND npd W=0.21 L=0.15 m=1 mult=1
+M1 1 GND GND GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M2 1 WL1 BL1 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M3 2 GND GND GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M4 2 WL1 BR1 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M5 3 GND GND GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M6 3 WL0 BL0 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M7 4 GND GND GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
+M8 4 WL0 BR0 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.15u m=1 mult=1
 
 * drainOnly NMOS
-M9 BL1 GND BL1 GND npd W=0.21 L=0.08 m=1 mult=1
-M10 BR1 GND BR1 GND npd W=0.21 L=0.08 m=1 mult=1
+M9 BL1 GND BL1 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.08u m=1 mult=1
+M10 BR1 GND BR1 GND sky130_fd_pr__nfet_01v8 W=0.21u L=0.08u m=1 mult=1
 
 .ENDS

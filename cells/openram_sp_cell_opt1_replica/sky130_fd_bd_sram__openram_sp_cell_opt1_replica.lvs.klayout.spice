@@ -17,6 +17,13 @@
 
 
 
-.subckt sky130_fd_bd_sram__openram_sp_cell_opt1_replica BL BR VGND VNB VPB VPWR WL
-
+.subckt sky130_fd_bd_sram__openram_sp_cell_opt1_replica BL BR VGND VPWR VPB VNB WL
+M0 Q_bar WL BR VNB sky130_fd_pr__nfet_01v8 w=0.14u l=0.15u m=1 mult=1
+M1 Q Q_bar VGND VNB sky130_fd_pr__nfet_01v8 w=0.21u l=0.15u m=1 mult=1
+M2 BL WL Q VNB sky130_fd_pr__nfet_01v8 w=0.14u l=0.15u m=1 mult=1
+*M3 Q WL Q VPB sky130_fd_pr__pfet_01v8_hvt w=0.07u l=0.095u m=1 mult=1
+*M4 Q_bar WL Q_bar VPB sky130_fd_pr__pfet_01v8_hvt w=0.07u l=0.095u m=1 mult=1
+*M5 VPWR Q Q_bar VPB sky130_fd_pr__pfet_01v8_hvt w=0.14u l=0.15u m=1 mult=1
+*M6 Q Q_bar VPWR VPB sky130_fd_pr__pfet_01v8_hvt w=0.14u l=0.15u m=1 mult=1
+M7 VGND Q Q_bar VNB sky130_fd_pr__nfet_01v8 w=0.21u l=0.15u m=1 mult=1
 .ends
