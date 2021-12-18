@@ -20,23 +20,23 @@
 *.SEEDPROM
 
 * Bitcell Core
-M0 Q WL1 BL1 GND npd W=0.21 L=0.15 m=1 mult=1
-M1 GND Q_bar Q GND npd W=0.21 L=0.15 m=1 mult=1
-M2 GND Q_bar Q GND npd W=0.21 L=0.15 m=1 mult=1
-M3 BL0 WL0 Q GND npd W=0.21 L=0.15 m=1 mult=1
-M4 Q_bar WL1 BR1 GND npd W=0.21 L=0.15 m=1 mult=1
-M5 GND Q Q_bar GND npd W=0.21 L=0.15 m=1 mult=1
-M6 GND Q Q_bar GND npd W=0.21 L=0.15 m=1 mult=1
-M7 BR0 WL0 Q_bar GND npd W=0.21 L=0.15 m=1 mult=1
-M8 VDD Q Q_bar VDD ppu W=0.14 L=0.15 m=1 mult=1
-M9 Q Q_bar VDD VDD ppu W=0.14 L=0.15 m=1 mult=1
+M0 Q WL1 BL1 GND npd W=0.21u L=0.15u m=1 mult=1
+M1 GND Q_bar Q GND npd W=0.21u L=0.15u m=1 mult=1
+M2 GND Q_bar Q GND npd W=0.21u L=0.15u m=1 mult=1
+M3 BL0 WL0 Q GND npd W=0.21u L=0.15u m=1 mult=1
+M4 Q_bar WL1 BR1 GND npd W=0.21u L=0.15u m=1 mult=1
+M5 GND Q Q_bar GND npd W=0.21u L=0.15u m=1 mult=1
+M6 GND Q Q_bar GND npd W=0.21u L=0.15u m=1 mult=1
+M7 BR0 WL0 Q_bar GND npd W=0.21u L=0.15u m=1 mult=1
+M8 VDD Q Q_bar VDD ppu W=0.14u L=0.15u m=1 mult=1
+M9 Q Q_bar VDD VDD ppu W=0.14u L=0.15u m=1 mult=1
 
 * drainOnly PMOS
-M10 Q_bar WL1 Q_bar VDD ppu W=0.14 L=0.08 m=1 mult=1
-M11 Q WL0 Q VDD ppu W=0.14 L=0.08 m=1 mult=1
+M10 Q_bar WL1 Q_bar VDD ppu W=0.14u L=0.08u m=1 mult=1
+M11 Q WL0 Q VDD ppu W=0.14u L=0.08u m=1 mult=1
 
 * drainOnly NMOS
-M12 BL1 GND BL1 GND npd W=0.21 L=0.08 m=1 mult=1
-M14 BR1 GND BR1 GND npd W=0.21 L=0.08 m=1 mult=1
+M12 BL1 GND BL1 GND npd W=0.21u L=0.08u m=1 mult=1
+M14 BR1 GND BR1 GND npd W=0.21u L=0.08u m=1 mult=1
 
 .ENDS
