@@ -17,6 +17,13 @@
 
 
 
-.subckt sky130_fd_bd_sram__sram_sp_cell_opt1a BL BR VGND VNB VPB VPWR WL
-
+.subckt sky130_fd_bd_sram__sram_sp_cell_opt1a BL BR VGND VPWR VPB VNB WL
+M0 Q_bar WL BR VNB npd w=0.14 l=0.15 m=1 mult=1
+M1 Q Q_bar VGND VNB npd w=0.21 l=0.15 m=1 mult=1
+M2 BL WL Q VNB npd w=0.14 l=0.15 m=1 mult=1
+M3 Q WL Q VPB ppu w=0.07 l=0.095 m=1 mult=1
+M4 Q_bar WL Q_bar VPB ppu w=0.07 l=0.095 m=1 mult=1
+M5 VPWR Q Q_bar VPB ppu w=0.14 l=0.15 m=1 mult=1
+M6 Q Q_bar VPWR VPB ppu w=0.14 l=0.15 m=1 mult=1
+M7 VGND Q Q_bar VNB npd w=0.21 l=0.15 m=1 mult=1
 .ends
