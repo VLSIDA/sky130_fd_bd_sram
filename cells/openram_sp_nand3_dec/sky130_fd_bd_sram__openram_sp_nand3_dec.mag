@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623356714
+timestamp 1640826145
 << nwell >>
 rect 594 -79 1502 437
 << pwell >>
@@ -204,15 +204,14 @@ rect 506 159 1171 211
 << labels >>
 rlabel metal1 s 358 -63 404 349 4 GND
 rlabel locali s 1474 57 1474 57 4 Z
-rlabel metal1 s 381 141 381 141 4 gnd
 rlabel metal1 s 852 -7 900 347 4 VDD
 rlabel metal1 s 1284 -7 1332 302 4 VDD
-rlabel metal1 s 876 170 876 170 4 vdd
-rlabel metal1 s 1308 147 1308 147 4 vdd
-rlabel metal1 s 381 143 381 143 4 gnd
 rlabel polycont 253 82 253 82 1 A
 rlabel polycont 143 154 143 154 1 B
 rlabel polycont 33 226 33 226 1 C
+rlabel metal1 1308 294 1308 294 1 vdd
+rlabel metal1 878 320 878 320 1 vdd
+rlabel metal1 382 346 382 346 1 gnd
 << properties >>
 string FIXED_BBOX 0 0 1502 316
 << end >>

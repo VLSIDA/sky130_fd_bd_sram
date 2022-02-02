@@ -14,16 +14,14 @@
 *
 * SPDX-License-Identifier: Apache-2.0
 
+* NGSPICE file created from sky130_fd_bd_sram__openram_sp_nand2_dec.ext - technology: EFS8A
 
 
+* Top level circuit sky130_fd_bd_sram__openram_sp_nand2_dec
+.subckt sky130_fd_bd_sram__openram_sp_nand2_dec A B Z VDD GND
 
-.subckt sky130_fd_bd_sram__sram_sp_cell_opt1a BL BR VGND VPWR VPB VNB WL
-M0 Q_bar WL BR VNB npd w=0.14 l=0.15 m=1 mult=1
-M1 Q Q_bar VGND VNB npd w=0.21 l=0.15 m=1 mult=1
-M2 BL WL Q VNB npd w=0.14 l=0.15 m=1 mult=1
-M3 Q WL Q VPB ppu w=0.07 l=0.095 m=1 mult=1
-M4 Q_bar WL Q_bar VPB ppu w=0.07 l=0.095 m=1 mult=1
-M5 VPWR Q Q_bar VPB ppu w=0.14 l=0.15 m=1 mult=1
-M6 Q Q_bar VPWR VPB ppu w=0.14 l=0.15 m=1 mult=1
-M7 VGND Q Q_bar VNB npd w=0.21 l=0.15 m=1 mult=1
+M1001 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12u L=0.15u m=1 mult=1
+M1002 VDD A Z VDD sky130_fd_pr__pfet_01v8 W=1.12u L=0.15u m=1 mult=1
+M1000 Z A a_n722_276# GND sky130_fd_pr__nfet_01v8 W=0.74u L=0.15u m=1 mult=1
+M1003 a_n722_276# B GND GND sky130_fd_pr__nfet_01v8 W=0.74u L=0.15u m=1 mult=1
 .ends
