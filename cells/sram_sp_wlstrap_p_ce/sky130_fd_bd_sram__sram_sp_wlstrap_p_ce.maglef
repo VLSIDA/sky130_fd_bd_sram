@@ -4,17 +4,7 @@ magscale 1 2
 timestamp 1614044933
 << pwell >>
 rect 83 122 177 252
-<< obsli1 >>
-rect 113 211 147 245
-rect 165 193 199 227
-rect 0 141 17 175
-rect 113 143 147 177
-rect 165 121 199 155
-rect 243 141 260 175
-rect 56 40 90 74
-rect 113 32 147 66
-rect 170 40 204 74
-<< obsm1 >>
+<< m1 >>
 rect 0 263 14 316
 rect 0 179 26 263
 rect -11 127 26 179
@@ -49,11 +39,10 @@ rect 111 14 149 20
 tri 149 14 155 20 nw
 rect 184 0 218 102
 rect 246 0 260 121
-<< obsm2 >>
+<< m2 >>
 rect -11 127 26 179
 rect 234 127 271 179
 rect 98 24 162 88
-rect 104 23 156 24
 << properties >>
 string LEFclass BLOCK
 string FIXED_BBOX -11 0 271 316
