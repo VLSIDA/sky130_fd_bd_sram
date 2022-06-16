@@ -1,5 +1,6 @@
 * NGSPICE file created from sky130_fd_bd_sram__sram_sp_colend.ext - technology: sky130A
 
-.subckt sky130_fd_bd_sram__sram_sp_colend BL1 VPWR VGND BL0 gate
-*X0 BL0 a_0_24# BL0 w_96_0# sky130_fd_pr__nfet_01v8 ad=1.68e+10p pd=520000u as=0p ps=0u w=70000u l=210000u
+.subckt sky130_fd_bd_sram__sram_sp_colend bl vdd gnd br gate vpb vnb
+*X0 br gate br vnb sky130_fd_pr__special_nfet_pass w=0.07u l=0.21u
 .ends
+
