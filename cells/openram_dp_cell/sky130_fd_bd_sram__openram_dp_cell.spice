@@ -15,17 +15,21 @@
 * SPDX-License-Identifier: Apache-2.0
 
 
-.subckt sky130_fd_bd_sram__openram_dp_cell BL0 BL1 BR0 BR1 GND VDD WL0 WL1
-X0 a_38_133# a_16_183# GND GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X1 BL1 GND BL1 GND sky130_fd_pr__special_nfet_pass w=105000u l=185000u
-X2 a_38_133# WL1 BL1 GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X3 BR0 WL0 a_16_183# GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X4 a_38_n79# GND a_38_n79# GND sky130_fd_pr__special_nfet_pass w=105000u l=185000u
-X5 a_400_n79# GND a_400_n79# GND sky130_fd_pr__special_nfet_pass w=105000u l=185000u
-X6 BR1 GND BR1 GND sky130_fd_pr__special_nfet_pass w=105000u l=185000u
-X7 GND a_38_133# a_16_183# GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X8 a_16_183# a_38_133# GND GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X9 BL0 WL0 a_38_133# GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X10 a_16_183# WL1 BR1 GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
-X11 GND a_16_183# a_38_133# GND sky130_fd_pr__special_nfet_latch w=210000u l=150000u
+.subckt sky130_fd_bd_sram__openram_dp_cell BL0 BR0 BL1 BR1 WL0 WL1 VDD GND
+X0 gnd gnd bl1 gnd sky130_fd_pr__special_nfet_latch w=0.21u l=80n
+X1 a_38_133# wl0 a_38_133# vdd sky130_fd_pr__special_pfet_pass w=0.14u l=80n
+X2 a_16_183# wl1 br1 gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X3 gnd gnd a_400_n79# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=80n
+X4 a_16_183# a_38_133# gnd gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X5 a_16_183# wl1 a_16_183# vdd sky130_fd_pr__special_pfet_pass w=0.14u l=80n
+X6 a_38_133# wl1 bl1 gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X7 gnd gnd a_38_n79# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=80n
+X8 gnd gnd br1 gnd sky130_fd_pr__special_nfet_latch w=0.21u l=80n
+X9 a_38_133# a_16_183# gnd gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X10 br0 wl0 a_16_183# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X11 gnd a_38_133# a_16_183# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X12 a_38_133# a_16_183# vdd vdd sky130_fd_pr__special_pfet_pass w=0.14u l=0.15u
+X13 vdd a_38_133# a_16_183# vdd sky130_fd_pr__special_pfet_pass w=0.14u l=0.15u
+X14 bl0 wl0 a_38_133# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X15 gnd a_16_183# a_38_133# gnd sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
 .ends

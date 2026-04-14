@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1607456505
+timestamp 1774851309
 << nwell >>
 rect 144 -79 336 395
 << pwell >>
@@ -10,10 +10,7 @@ rect 400 -39 442 39
 << metal1 >>
 rect 78 -104 114 420
 rect 150 -104 186 420
-rect 222 254 258 420
-rect 222 220 223 254
-rect 257 220 258 254
-rect 222 -104 258 220
+rect 222 -104 258 420
 rect 294 -104 330 420
 rect 366 -104 402 420
 << obsm1 >>
@@ -78,7 +75,7 @@ port 8 nsew
 rlabel metal2 s -42 103 624 151 6 WL1
 port 8 nsew
 << properties >>
-string LEFclass BLOCK
 string FIXED_BBOX 0 0 624 395
+string LEFclass BLOCK
 string LEFview TRUE
 << end >>
