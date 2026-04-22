@@ -2,17 +2,17 @@
 .subckt sky130_fd_bd_sram__openram_sp_cell_opt1_dummy BL BR VGND VPWR VPB VNB WL
 
 *inverter 1
-X6 VPWR VGND lr_parasitic_float VPB sky130_fd_pr__special_pfet_pass w=0.14u l=0.15u
-X1 VGND VGND ll_access_float VNB sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X6 Q Q_bar VPWR VPB sky130_fd_pr__special_pfet_pass w=0.14 l=0.15
+X1 Q Q_bar VGND VNB sky130_fd_pr__special_nfet_latch w=0.21 l=0.15
 
 *inverter 2
-X5 VPWR VGND ur_parasitic_float VPB sky130_fd_pr__special_pfet_pass w=0.14u l=0.15u
-X7 VGND VGND ul_access_float VNB sky130_fd_pr__special_nfet_latch w=0.21u l=0.15u
+X5 VPWR Q Q_bar VPB sky130_fd_pr__special_pfet_pass w=0.14 l=0.15
+X7 VGND Q Q_bar VNB sky130_fd_pr__special_nfet_latch w=0.21 l=0.15
 
 *access tx
-X2 ul_access_float WL BL VNB sky130_fd_pr__special_nfet_pass w=0.14u l=0.15u
-X0 ll_access_float WL BR VNB sky130_fd_pr__special_nfet_pass w=0.14u l=0.15u
+X2 Q wl bl_noconn VNB sky130_fd_pr__special_nfet_pass w=0.14 l=0.15
+X0 Q_bar wl br_noconn VNB sky130_fd_pr__special_nfet_pass w=0.14 l=0.15
 
-X3 ur_parasitic_float WL ur_parasitic_float VPB sky130_fd_pr__special_pfet_pass w=0.14u l=25n
-X4 lr_parasitic_float WL lr_parasitic_float VPB sky130_fd_pr__special_pfet_pass w=0.14u l=25n
+X3 Q WL Q VPB sky130_fd_pr__special_pfet_pass w=0.14 l=25n
+X4 Q_bar WL Q_bar VPB sky130_fd_pr__special_pfet_pass w=0.14 l=25n
 .ends
